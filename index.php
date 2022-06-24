@@ -10,7 +10,10 @@
 </head>
 <body>
     <div>
-        <?php echo $testo ?>
+        <? echo $testo ?>
+    </div>
+    <div>
+        la lunghezza della frase è: <?= strlen($testo) ?>
     </div>
 </body>
 </html>
