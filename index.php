@@ -1,4 +1,7 @@
-<?php $testo = "Lorem ipsum dolor sit amet consectetur adipisicing elit"?>
+<?php 
+    $testo = "Lorem ciao dolor sit ciao consectetur ciao elit";
+    $sost = str_replace("ciao", "***", $testo);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,6 +17,9 @@
     </div>
     <div>
         la lunghezza della frase è: <?= strlen($testo) ?>
+    </div>
+    <div>
+        <?= $sost?>
     </div>
 </body>
 </html>
