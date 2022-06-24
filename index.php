@@ -1,6 +1,8 @@
 <?php 
     $testo = "Lorem ciao dolor sit ciao consectetur ciao elit";
-    $sost = str_replace("ciao", "***", $testo);
+    // $sost = str_replace("ciao", "$text", $testo);
+    $utent = $_GET['name'];
+    $sost = str_replace($utent, "***", $testo)
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +14,10 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="" method="get">
+        <input type="text" name="name" id="name">
+        <button>invio</button>
+    </form>
     <div>
         <? echo $testo ?>
     </div>
@@ -20,6 +26,9 @@
     </div>
     <div>
         <?= $sost?>
+    </div>
+    <div>
+        la lunghezza della frase con le sostituzioni è: <?= strlen($sost) ?>
     </div>
 </body>
 </html>
